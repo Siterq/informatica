@@ -155,18 +155,25 @@ h2 > a:hover{
     <span class="navbar-toggler-icon"></span>
   </button>
 
-<input class="form-control form-control-dark w-100" list="lista-opzioni" id="barra-ricerca" placeholder="Cerca" aria-label="Search">
+<input id="barra-ricerca" class="form-control form-control-dark w-100" list="lista-opzioni"  placeholder="Cerca" aria-label="Search">
 <datalist id="lista-opzioni">
-  <option value="Architettura 1">
-  <option value="Architettura 2">
-  <option value="Analisi 1">
-  <option value="Fisica">
-  <option value="Inglese">
-  <option value="Matematica Discreta">
-  <option value="Programmazione 1">
-  <option value="Programmazione 2">
-  <option value="Tecniche di Comunicazione e Scrittura">
+  <option value="#archi1">Architettura 1</option>
+  <option value="#archi2">Architettura 2</option>
+  <option value="#analisi">Analisi 1</option>
+  <option value="#fisica">Fisica</option>
+  <option value="#inglese">Inglese</option>
+  <option value="#matediscreta">Matematica Discreta</option>
+  <option value="#prog1">Programmazione 1</option>
+  <option value="#prog2">Programmazione 2</option>
+  <option value="#tcs">Tecniche di Comunicazione e Scrittura</option>
 </datalist>
+
+<script>
+  document.getElementById('barra-ricerca').addEventListener('input', function () {
+  var element_selected = document.getElementById('barra-ricerca').value;
+  window.location = /*"https://siterq.github.io/informatica/index.html" +*/ element_selected;
+});
+</script>
 
   <div class="navbar-nav">
     <div class="nav-item text-nowrap">
@@ -252,7 +259,7 @@ h2 > a:hover{
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         <br><br>
         <div class="progress" style="height: 12px;">
-          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">10%</div>
+          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
         </div>
       </div>
 
@@ -268,14 +275,14 @@ h2 > a:hover{
         <hr>
         <h2>#Architettura 1 > <a href="https://www.dir.uniupo.it/course/view.php?id=11163">https://www.dir.uniupo.it/...</a></h2>
 
-      <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <h4>Aggiornamento</h4> Il sito si sta' aggiornando alla versione 0.3-07!
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        <br><br>
-        <div class="progress" style="height: 12px;">
-          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">10%</div>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <h4>Aggiornamento</h4> Il sito si sta' aggiornando alla versione 0.3-07!
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          <br><br>
+          <div class="progress" style="height: 12px;">
+            <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+          </div>
         </div>
-      </div>
 
       <div class="container">
         <div class="row">
@@ -386,7 +393,7 @@ h2 > a:hover{
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         <br><br>
         <div class="progress" style="height: 12px;">
-          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">10%</div>
+          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
         </div>
       </div>
 
@@ -433,7 +440,7 @@ h2 > a:hover{
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         <br><br>
         <div class="progress" style="height: 12px;">
-          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">10%</div>
+          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
         </div>
       </div>
 
@@ -490,7 +497,7 @@ h2 > a:hover{
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         <br><br>
         <div class="progress" style="height: 12px;">
-          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">10%</div>
+          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
         </div>
       </div>
 
@@ -629,7 +636,7 @@ h2 > a:hover{
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         <br><br>
         <div class="progress" style="height: 12px;">
-          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">10%</div>
+          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
         </div>
       </div>
 
@@ -700,7 +707,7 @@ h2 > a:hover{
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         <br><br>
         <div class="progress" style="height: 12px;">
-          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">10%</div>
+          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
         </div>
       </div>
 
@@ -790,7 +797,7 @@ h2 > a:hover{
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         <br><br>
         <div class="progress" style="height: 12px;">
-          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">10%</div>
+          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
         </div>
       </div>
 
@@ -898,7 +905,7 @@ h2 > a:hover{
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         <br><br>
         <div class="progress" style="height: 12px;">
-          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">10%</div>
+          <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
         </div>
       </div>
 
@@ -1047,7 +1054,7 @@ h2 > a:hover{
 
 <footer id="bottom" class="row text-center fixed-bottom">
 <div class="col-12">
-© 2021 | Version: 0.2b-07
+© 2021 | Version: 0.2c-07
 </div>
 </footer>			    
 
