@@ -155,11 +155,11 @@ h2 > a:hover{
     <span class="navbar-toggler-icon"></span>
   </button>
 
-<input id="barra-ricerca" class="form-control form-control-dark w-100" list="lista-opzioni"  placeholder="Cerca" aria-label="Search">
+<input onclick="pulisci()" id="barra-ricerca" class="form-control form-control-dark w-100" list="lista-opzioni"  placeholder="Cerca" aria-label="Search">
 <datalist id="lista-opzioni">
   <option value="archi1">Architettura 1</option>
   <option value="archi2">Architettura 2</option>
-  <option value="analisi">Analisi 1</option>
+  <option value="analisi1">Analisi 1</option>
   <option value="fisica">Fisica</option>
   <option value="inglese">Inglese</option>
   <option value="matediscreta">Matematica Discreta</option>
@@ -173,6 +173,10 @@ h2 > a:hover{
   var element_selected = document.getElementById('barra-ricerca').value;
   window.location = /*"https://siterq.github.io/informatica/index.html" +*/"#"+ element_selected;
 });
+function pulisci()
+{
+  document.getElementById('barra-ricerca').value = "";
+}
 </script>
 
   <div class="navbar-nav">
@@ -1054,7 +1058,7 @@ h2 > a:hover{
 
 <footer id="bottom" class="row text-center fixed-bottom">
 <div class="col-12">
-© 2021 | Version: 0.2c-07
+© 2021 | Version: 0.2d-07
 </div>
 </footer>			    
 
