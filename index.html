@@ -173,6 +173,7 @@ h2 > a:hover{
   var element_selected = document.getElementById('barra-ricerca').value;
   window.location = /*"https://siterq.github.io/informatica/index.html" +*/"#"+ element_selected;
 });
+
 function pulisci()
 {
   document.getElementById('barra-ricerca').value = "";
@@ -188,7 +189,7 @@ function pulisci()
 
 <div class="container-fluid">
   <div class="row">
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse overflow-auto">
       <div class="position-sticky pt-3">
         <ul class="nav flex-column">
           <li class="nav-item">
